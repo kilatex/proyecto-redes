@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>App Web Redes</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">App Web Redes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">¿Que Son Redes?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="topologia.html">Topología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="modelos.html">Modelos OSI y TCP/IP</a>
+                        </li>
+
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h2 class="text-primary">Modelos OSI Y TCP/IP</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p>
+                        El modelo OSI (Modelo para la Interconexión de Sistemas Abiertos) se compone de siete niveles de
+                        proceso, mediante el cual los datos se empaquetan y se transmiten desde una aplicación emisora,
+                        viajando a través de medios físicos hasta llegar a una aplicación receptora. Mientras que El
+                        modelo TCP/IP (Protocolo para el Control de Transmisión/ Protocolo de Internet), está compuesto
+                        por cuatro capas, en la que cada una se encarga de determinados aspectos en la comunicación y a
+                        su vez cada una brinda un servició especifico a la capa superior. Indudablemente, ambos modelos
+                        son de gran importancia al momento de estudiar las comunicaciones en redes, ya que definen la
+                        comunicación por medio de una arquitectura basada en capas.
+                    </p>
+                </div>
+                <div class="col-md-4 col-image">
+                    <img src="./img/protocolo-TCP-IP-vs-OSI.png" alt="">
+                </div>
+
+            </div>
+            <div class="row">
+                
+                <div class="col-md-12">
+                    <p>
+                        Sin embargo, existen algunas características entre uno y otro que los hacen diferentes, aunque
+                        el propósito para el que fueron creados sea el mismo. En lo que se refiere al modelo OSI, se
+                        trata de un conjunto de siete capas, siendo la capa de aplicación la más cercana al usuario y la
+                        capa física la más alejada a él. En cada una de sus capas se ofrece un servicio que contribuye
+                        con una parte de la comunicación, dicho servicio es implementado a través de un protocolo y la
+                        manera de comunicarse con sus capas adyacentes es llevada a cabo mediante el establecimiento de
+                        una interfaz, es decir, la capa n solo puede comunicarse con las capas n-1 y n+1, siendo la capa
+                        física la que realmente conecta a ambas máquinas, ya que es a través de esta donde fluyen los
+                        mensajes en forma de bits. Sin embargo, aunque OSI es un excelente modelo, solo ha servido como
+                        referente teórico por lo general y detallado que es; mientras que en términos prácticos se opta
+                        por TCP/IP debido a que los protocolos para este último son más adecuados a la realidad.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer bg-primary">
+            Santiago Maldonado - CI: V-29699795 ING DE SISTEMAS VII. REDES
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

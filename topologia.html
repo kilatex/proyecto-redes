@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>App Web Redes</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark  bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">App Web Redes</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="index.html">¿Que Son Redes?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="topologia.html">Topología</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="modelos.html">Modelos OSI y TCP/IP</a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <div class="content">
+            <h2 class="text-primary">Topología de Redes</h2>
+            <div class="row">
+                <div class="col-md-4 col-image">
+                    <img src="./img/figura-11.jpg" alt="">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        La topología de red se define como un mapa físico o lógico de una red para intercambiar datos.
+                        En otras palabras, es la forma en que está diseñada la red, sea en el plano físico o lógico. El
+                        concepto de red puede definirse como conjunto de nodos interconectados. Un nodo es el punto en
+                        el que una curva se intercepta a sí misma. Lo que un nodo es concretamente depende del tipo de
+                        red en cuestión. Un ejemplo claro de esto es la topología de árbol, la cual es llamada así por
+                        su apariencia estética, por la cual puede comenzar con la inserción del servicio de internet
+                        desde el proveedor, pasando por el router, luego por un switch y este deriva a otro switch u
+                        otro router o sencillamente a los hosts (estaciones de trabajo), el resultado de esto es una red
+                        con apariencia de árbol porque desde el primer router que se tiene se ramifica la distribución
+                        de Internet, dando lugar a la creación de nuevas redes o subredes tanto internas como externas.
+                        Además de la topología estética, se puede dar una topología lógica a la red y eso dependerá de
+                        lo que se necesite en el momento.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mt-3">
+                        <img class="img-card" src="./img/Red_punto_a_punto.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Topología Punto a Punto</h5>
+                            <p class="card-text">La topología más simple es un enlace permanente entre dos puntos
+                                finales conocida como punto a punto (PtP). La topología punto a punto conmutada es la
+                                pasarela básica de la telefonía convencional. El valor de una red permanente de PtP es
+                                la comunicación sin obstáculos entre los dos puntos finales. El valor de una conexión
+                                PtP a demanda es proporcional al número de pares posibles de abonados y se ha expresado
+                                como la ley de Metcalfe.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card">
+                        <img class="img-card" src="./img/png;base64f3b018b0c217b1ab.png" class="card-img-bottom"
+                            alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Topología en Bus </h5>
+                            <p class="card-text">La topología “en bus” es posiblemente es la más fácil de entender, y
+                                consiste en un canal de comunicaciones PtP para que el usuario pueda estar
+                                permanentemente asociado con los dos puntos finales. Un teléfono infantil de lata es un
+                                ejemplo de canal dedicado físico.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card">
+                        <img class="img-card" src="./img/estrella.jpg" class="card-img-bottom" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Topología de Estrella </h5>
+                            <p class="card-text">La topología en estrella reduce la posibilidad de fallo de red
+                                conectando todos los nodos a un nodo central. Cuando se aplica a una red basada en la
+                                topología estrella este concentrador central reenvía todas las transmisiones recibidas
+                                de cualquier nodo periférico a todos los nodos periféricos de la red, algunas veces
+                                incluso al nodo que lo envió. Todos los nodos periféricos se pueden comunicar con los
+                                demás transmitiendo o recibiendo del nodo central solamente. Un fallo en la línea de
+                                conexión de cualquier nodo con el nodo central provocaría el aislamiento de ese nodo
+                                respecto a los demás, pero el resto de sistemas permanecería intacto. El tipo de
+                                concentrador (hub) se utiliza en esta topología, aunque es muy obsoleto; se suele usar
+                                comúnmente un switch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <div class="card">
+                        <img class="img-card" src="./img/arbol.png" class="card-img-bottom" alt="...">
+
+                        <div class="card-body">
+                            <h5 class="card-title">Topología Red en Arbol </h5>
+                            <p class="card-text">La topología “Red en Arbol” funciona conectando varios computadores
+                                personales a través de un conmutador que está conectado a una estación de trabajo Unix,
+                                la cual tiene salida a Internet a través de un enrutador. Una Red en árbol topología en
+                                árbol (también conocida como topología jerárquica) puede ser vista como una colección de
+                                redes en estrella ordenadas en una jerarquía. Este árbol tiene nodos periféricos
+                                individuales (por ejemplo, hojas) que requieren ‘transmitir a’ y ‘recibir de’ otro nodo
+                                solamente y no necesitan actuar como repetidores o regeneradores. Al contrario que en
+                                las redes en estrella, la función del nodo central se puede distribuir.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer bg-primary">
+            Santiago Maldonado - CI: V-29699795 ING DE SISTEMAS VII. REDES
+        </div>
+    </div>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
